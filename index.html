@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamification App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <button onclick="showSection('dashboard')">Dashboard</button>
+        <button onclick="showSection('segna-attivita')">Segna Attività</button>
+        <button onclick="showSection('attivita-completate')">Attività Completate</button>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section active">
+        <h1>Dashboard</h1>
+        <div id="level-info">
+            <p>Livello Attuale: <span id="current-level"></span></p>
+            <p>Punteggio Totale: <span id="total-score"></span></p>
+            <p>Punteggio Mensile: <span id="monthly-score"></span></p>
+            <p>Punteggio Giornaliero: <span id="daily-score"></span></p>
+        </div>
+        <div id="goals">
+            <h2>Obiettivi del Livello</h2>
+            <p>Prossima Ricompensa: <span id="next-reward"></span></p>
+        </div>
+    </section>
+
+    <!-- Segna Attività Section -->
+    <section id="segna-attivita" class="section">
+        <h1>Segna Attività</h1>
+        <div id="activity-list"></div>
+    </section>
+
+    <!-- Attività Completate Section -->
+    <section id="attivita-completate" class="section">
+        <h1>Attività Completate</h1>
+        <ul id="completed-activities"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
